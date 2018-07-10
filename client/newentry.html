@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <title>POTLUCK App | Add a new post</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+      <link rel="stylesheet" type="text/css" href="newentry.css">
+  </head>
+
+  <body>
+    <nav role="navigation">Nav</nav>
+    <main role="main">
+      <header>
+        <h1>Start a potluck</h1>
+      </header>
+      <section>
+        <h2>What is your restaurant: </h2>
+        <form id="restaurant-info">
+          <div class="form-section">
+            <label for="restaurant-name">Restaurant Name</label>
+            <input type="text" name="restaurant-name" placeholder="Petee's Pie Co." required>
+          </div>
+          <div class="form-section">
+            <label for="restaurant-street-address">Restaurant Street Address</label>
+            <input type="text" name="restaurant-street-address" placeholder="61 Delancey St." required>
+          </div>
+          <div class="form-section">
+            <label for="restaurant-zipcode">Restaurant Zipcode</label>
+            <input type="number" name="restaurant-zipcode" placeholder="10002" required>
+          </div>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+      <section>
+        <h2>What are you bringing: </h2>
+        <form id="dish-info">
+          <div class="form-section">
+            <label for="meal-name">Meal Title</label>
+            If listing multiple items, separate by comma
+            <input type="text" name="meal-name" placeholder="Apple Pie" required>
+          </div>
+          <div class="form-section">
+            <label for="meal-summary">Meal Summary</label>
+            <textarea name="meal-summary" rows="15"   required></textarea>
+          </div>
+          <div class="form-section">
+            <p>Select where applicable: </p>
+
+            <input type="radio" name="meal-type" value="0" class="meal-type-radio" checked>
+            <label for="meal-type">
+              <span>Vegetarian</span>
+            </label>
+            <input type="radio" name="meal-type" value="1" class="meal-type-radio" checked>
+            <label for="meal-type">
+              <span>Vegan</span>
+            </label>
+            <input type="radio" name="meal-type" value="2" class="meal-type-radio" checked>
+            <label for="meal-type">
+              <span>Contains Nuts</span>
+            </label>
+            <input type="radio" name="meal-type" value="3" class="meal-type-radio" checked>
+            <label for="meal-type">
+              <span>Gluten Free</span>
+            </label>
+          </div>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
